@@ -1,0 +1,10 @@
+@mixin font($fs: 16px, $fw: 500, $lh: 19px){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin flex($ds: flex, $jc: center){
+    display: $ds;
+    justify-content: $jc;
+}

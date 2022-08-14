@@ -1,0 +1,27 @@
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bacground-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    background-color: var(--accent-bgc);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero__title {
+    @include font(44px, 900, 60px);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+}
