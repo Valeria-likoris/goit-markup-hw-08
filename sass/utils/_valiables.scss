@@ -1,27 +1,12 @@
 :root {
-    --font-family: 'Roboto', sans-serif;
-    --font-family-secondary: 'Raleway', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
 
-    --primary-text-color: #757575;
-    --secondary-text-color: #212121;
-    --white-color: #FFF;
-    --transparent-text-color: rgba(255, 255, 255, 0.6);
+    --background: #FAFAFA;
 
-    --accent-blue: #2196F3;
-    --accent-dark: #000;
+    --primary-text-color: #252B42;
+    --secondary-text-color: #737373;
 
-    --accent-bgc: #2F303A;
-    --secondary-bgc: #F5F4FA;
-    --work-bgc: rgba(47, 48, 58, 0.8);
-    --portfolio-bgc: rgba(33, 150, 243, 0.9);
-    --modal-bgc: rgba(0, 0, 0, 0.2);
-
-    --icon-bgc: rgba(255, 255, 255, 0.1);
-    --color-icon: #AFB1B8;
-
-    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
-
+    --white-color: #FFFFFF;
+    --primary-accent-color: #FF7B47;
+    --secondary-accent-color: #0D5C63;
 }
