@@ -1,0 +1,6 @@
+.logo {
+    font-family: var(--font-family-secondary);
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+    color: var(--accent-blue);
+}
