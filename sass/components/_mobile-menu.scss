@@ -8,6 +8,7 @@
 
 .mobile-menu-open__icon {
     fill: var(--secondary-text-color);
+    transition: fill var(--transition-dur-and-func);
 
     .mobile-menu-open:hover &,
     .mobile-menu-open:focus & {
@@ -28,14 +29,14 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-}
-
-.mobile-menu.is-open {
+    &.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
+}
+
+
 
 .mobile-menu__container {
     display: flex;
@@ -56,8 +57,10 @@
 
 .mobile-menu__close-icon {
     fill: var(--secondary-text-color);
-
-    .mobile-menu__close-btn:hover &{
+    transition: fill var(--transition-dur-and-func);
+    
+    .mobile-menu__close-btn:hover &,
+    .mobile-menu__close-btn:focus &{
         fill: var(--accent-blue);
     }
 }
@@ -69,11 +72,6 @@
 .nav-mobile__link {
     @include font(40px, 500, 47px);
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-}
-
-
-.nav-mobile__link{
     color: var(--secondary-text-color);
 }
 .nav-mobile__link_current {

@@ -85,6 +85,14 @@
     margin-right: 8px;
     fill: currentColor;
     }
+    .contact-list__link {
+        transition: color var(--transition-dur-and-func);
+        display: flex;
+        align-items: center;
+        
+        @include font($fs: 12px, $fw: 500, $lh: 14px);
+        letter-spacing: 0.02em;
+    }
     .address__link:hover,
     .address__link:focus,
     .nav__link:hover,
@@ -94,14 +102,6 @@
     .address__map:hover,
     .address__map:focus {
     color: var(--accent-blue);
-    }
-    .contact-list__link {
-        transition: color var(--transition-dur-and-func);
-        display: flex;
-        align-items: center;
-        
-        @include font($fs: 12px, $fw: 500, $lh: 14px);
-        letter-spacing: 0.02em;
     }
 
 }
