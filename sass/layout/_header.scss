@@ -93,14 +93,10 @@
         @include font($fs: 12px, $fw: 500, $lh: 14px);
         letter-spacing: 0.02em;
     }
-    .address__link:hover,
-    .address__link:focus,
     .nav__link:hover,
     .nav__link:focus,
     .contact-list__link:hover,
-    .contact-list__link:focus,
-    .address__map:hover,
-    .address__map:focus {
+    .contact-list__link:focus{
     color: var(--accent-blue);
     }
 
