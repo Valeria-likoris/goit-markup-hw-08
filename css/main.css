@@ -135,6 +135,7 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -1036,8 +1037,14 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
   .portfolio__item {
     flex-grow: calc((100% - 60px) / 3);
+  }
+  .portfolio__overlay {
+    padding: 63px 24px;
   }
 }
 .footer {
