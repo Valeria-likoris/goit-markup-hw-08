@@ -1050,7 +1050,7 @@ body {
     margin-bottom: 50px;
   }
   .portfolio__item {
-    flex-grow: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
   .portfolio__overlay {
     padding-top: 63px;
