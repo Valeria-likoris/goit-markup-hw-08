@@ -100,16 +100,15 @@
         }
 
 }
+
 .modal-form__check-desc {
     display: flex;
-    min-width: 375px;
-    justify-content: center;
+    width: 100%;
     align-items: center;
     margin-bottom: 30px;
 
     &::before {
             content: '';
-            margin-right: 7px;
             display: block;
             width: 16px;
             height: 15px;
