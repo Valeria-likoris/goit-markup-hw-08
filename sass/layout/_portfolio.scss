@@ -15,9 +15,11 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .portfolio__item:not(:last-child){
     margin-bottom: 30px;
 }
+
 .portfolio__link {
     display: block;
     transition: box-shadow var(--transition-dur-and-func);
@@ -103,13 +105,13 @@
         row-gap: 30px;
         column-gap: 30px;
     }
-    .portfolio__item{
-        flex-grow: calc((100% - 30px) / 2);
+    
+    .portfolio__item {
+        flex-basis: calc((100% - 30px) / 2);
     }
     .portfolio__item:not(:last-child){
     margin-bottom: 0;
     }
-
 }
 
 @media screen and (min-width:1200px) {
