@@ -138,15 +138,19 @@
     .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
     
     flex-wrap: wrap;
     }
     .footer__address {
-        margin-right: 165px;
+        margin-bottom: 0;
         min-width: 232px;
     }
+    .subscribe-social{
+        margin-bottom: 0;
+    }
     .footer-form{
+        margin-top: 60px;
         min-width: 450px;
     }
 }
@@ -162,7 +166,6 @@
     margin-bottom: 9px;
     }
     .subscribe-social {
-    margin-bottom: 0;
     margin-left: 70px;
     }
     .subscribe-social__title{
@@ -185,8 +188,6 @@
         text-align: left;
     }
     .footer__address {
-    margin-right: 0;
-    margin-bottom: 0;
     flex-grow: 1;
     }
 
