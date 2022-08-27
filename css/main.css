@@ -279,17 +279,21 @@ body {
 
 .section__title {
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1666666667;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1666666667;
   }
 }
 .backdrop {
@@ -662,7 +666,6 @@ body {
   background-position: 50% 50%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 480px;
   background-color: var(--accent-bgc);
   padding-top: 118px;
   padding-bottom: 118px;
@@ -690,7 +693,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet-background.jpg);
-    max-width: 768px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -969,7 +971,9 @@ body {
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-dur-and-func);
 }
 .portfolio__link:hover, .portfolio__link:focus {
@@ -1003,6 +1007,7 @@ body {
 }
 
 .portfolio__description {
+  flex-grow: 1;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   padding: 20px 24px;
@@ -1200,14 +1205,18 @@ body {
   .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
   .footer__address {
-    margin-right: 165px;
+    margin-bottom: 0;
     min-width: 232px;
   }
+  .subscribe-social {
+    margin-bottom: 0;
+  }
   .footer-form {
+    margin-top: 60px;
     min-width: 450px;
   }
 }
@@ -1222,7 +1231,6 @@ body {
     margin-bottom: 9px;
   }
   .subscribe-social {
-    margin-bottom: 0;
     margin-left: 70px;
   }
   .subscribe-social__title {
@@ -1245,8 +1253,6 @@ body {
     text-align: left;
   }
   .footer__address {
-    margin-right: 0;
-    margin-bottom: 0;
     flex-grow: 1;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -21,7 +21,9 @@
 }
 
 .portfolio__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--transition-dur-and-func);
 
     &:hover,
@@ -67,6 +69,7 @@
 }
 
 .portfolio__description {
+    flex-grow: 1;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     padding: 20px 24px;

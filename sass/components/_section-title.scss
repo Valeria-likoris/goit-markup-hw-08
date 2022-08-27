@@ -1,14 +1,16 @@
 .section__title {
     margin-bottom: 30px;
-    @include font(36px, 700, 42px);
+    @include font(28px, 700, 33px);
     letter-spacing: 0.03em;
     text-align: center;
 
     color: var(--secondary-text-color);
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1200px){
     .section__title{
         margin-bottom: 50px;
+        letter-spacing: 0.03em;
+        @include font(36px, 700, 42px);
 }
 }
